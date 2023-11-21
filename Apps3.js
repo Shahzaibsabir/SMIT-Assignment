@@ -865,6 +865,536 @@
 // alert("the index number of (n) is " + country.indexOf('n'))
 
 
+
+// XX ====================XX=================XX=====================XX=============
+//                               CHAPTER 31 to 34 
+// XX ====================XX=================XX=====================XX=============
+
+// ============= QUESTION 01
+
+// let current_date = new Date()
+// console.log(current_date);
+
+
+// ============= QUESTION 02
+
+// let current_date = new Date()
+
+// let months = [
+//     "jan",
+//     "feb",
+//     "march",
+//     "april",
+//     "may",
+//     "june",
+//     "july",
+//     "aug",
+//     "sep",
+//     "oct",
+//     "nov",
+//     "dec"
+// ]
+// let current_month_index = current_date.getMonth()
+// let current_month_name  = months[current_month_index]
+    
+// console.log(current_month_name);
+
+
+// QUESTION 03
+
+// let date = new Date()
+
+// let days = [
+//     "sunday",
+//     "monday",
+//     "tuesday",
+//     "wednesday",
+//     "thursday",
+//     "friday",
+//     "saturday",
+// ]
+// let dayIndex = date.getDay()
+// let dayName = days[dayIndex]
+// let slice_day = dayName.slice(0,3)
+// console.log(slice_day);
+
+
+// QUESTION 04
+
+// const myDate = new Date()
+
+// let days = [
+//     "sunday",
+//     "monday",
+//     "tuesday",
+//     "wednesday",
+//     "thursday",
+//     "friday",
+//     "saturday",
+// ]
+
+// let dayIndex = myDate.getDay()
+
+// let dayName = days[dayIndex]
+
+// if (dayName == "saturday" || "sunday") {
+//     alert("today is fun day.")
+// }
+// console.log(dayName);
+
+
+// QUESTION 05
+
+// let date = new Date()
+// let just_date = date.getDate()
+
+// if (just_date <= 15) {
+//     console.log("first fifteen days of the month.");
+// }
+
+
+// QUESTION 06
+
+// let change_date = new Date()
+
+// let change_time = change_date.getTime()
+
+// let Minutes = change_time / (1000 * 60) 
+// let Seconds = change_time / (1000 * 60) / 60
+// console.log("Minutes since midnight, Jan. 1, 1970: " + Minutes);
+// console.log("Seconds since midnight, Jan. 1, 1970: " + Seconds);
+
+
+
+// ============= QUESTION 07
+
+// let date = new Date()
+// console.log(date);
+
+// if (date.getTime() >= "0:00:00" && date.getTime() <= "11:59:59" ) {
+//     log("am")
+// } else {
+//     console.log("pm");
+// }
+
+
+// QUESTION 08
+
+// let laterDate = new Date("dec, 31 , 2020")
+// console.log(laterDate);
+
+
+// QUESTION 09
+
+// let ramzanDate = new Date("june,18,2015") 
+// let current_date = new Date()
+// let calculate = current_date - ramzanDate
+// const days_since_ramadan = Math.floor(calculate / (1000 * 60 * 60 * 24));
+// console.log(days_since_ramadan);
+
+
+// QUESTION 10
+
+// let current_date = new Date()
+// let refrenceDate = new Date('january,1,2023')
+// let elapsedSeconds = Math.floor((current_date - refrenceDate) / 1000);
+// console.log(elapsedSeconds);
+
+
+// QUESTION 11
+
+// let date = new Date()
+// let current_hour = date.getHours()
+// date.setHours(current_hour - 1);
+// console.log("its 1 hour ago " + date);
+// console.log(new Date());
+
+
+// QUESTION 12
+
+// let date = new Date()
+// date.setFullYear(date.getFullYear() - 100) 
+// alert(date);
+
+
+// QUESTION 13
+
+// let userAge = prompt("write your age here....")
+// userAge = parseInt(userAge)
+
+// let currentYear = new Date().getFullYear()
+// let birthYear = currentYear - userAge
+// console.log(birthYear);
+
+
+// QUESTION 14
+
+// let userName = prompt("writh your name..")
+// let month = prompt("writh month..")
+// let numOfUnits = prompt("write your units here....")
+// let chargesPerUnits = 10
+// let NetAmountPayable = chargesPerUnits * numOfUnits;
+// let latePayment = NetAmountPayable + 100;
+// let GrossAmountPayable = latePayment + latePayment;
+
+// console.log("name = " + userName);
+// console.log("month = " + month);
+// console.log("number Of Units = " + numOfUnits);
+// console.log("charges Per Units = " + chargesPerUnits);
+// console.log("Net Amount Payable = " + NetAmountPayable);
+// console.log("late Payment = " + latePayment);
+// console.log("Gross Amount Payable = " + GrossAmountPayable);
+
+
+// XX ====================XX=================XX=====================XX=============
+//                               CHAPTER 35 to 38 
+// XX ====================XX=================XX=====================XX============
+
+// ============= QUESTION 01
+
+// function currentTime() {
+//     return new Date()
+// }
+
+// console.log(currentTime());
+
+
+// ============= QUESTION 02
+
+// let fName = prompt("write your first name.")
+// let lName = prompt("write your last name.")
+
+// function greetTheUser() {
+//     return fullName = `hello ${fName} ${lName}`
+// }
+
+// alert(greetTheUser())
+
+
+// QUESTION 03
+
+// let userInputNum1 = +prompt('write a first value')
+// let userInputNum2 = +prompt('write a second value')
+
+// function add2Values() {
+//     return userInputNum1 + userInputNum2
+// }
+
+// console.log(add2Values());
+
+
+// QUESTION 04
+
+// function calculator(num1,num2,opreator) {
+//     num1 = +prompt("write a number")
+//     num2 = +prompt("write a second number")
+//     opreator = prompt("wirte a opreator.")
+
+//     if (opreator == "+") {
+//         let calculate = num1 + num2;
+//         alert(`your answer is ${calculate}`)
+//         return calculate
+//     } else if (opreator == "-") {
+//         let calculate = num1 - num2;
+//         alert(`your answer is ${calculate}`)
+//         return calculate
+//     }  else if (opreator == "*") {
+//         let calculate = num1 * num2;
+//         alert(`your answer is ${calculate}`)
+//         return calculate
+//     } else if (opreator == "/") {
+//         let calculate = num1 / num2;
+//         alert(`your answer is ${calculate}`)
+//         return calculate
+//     }
+// }
+
+// calculator()
+
+
+// QUESTION 05
+
+// function square() {
+//     let num = prompt("write a number.")
+//     result = num ** 2
+//     console.log(`the square of your ${num} is ${result}`);
+//     return result;
+// }
+
+// square()
+
+
+// QUESTION 07
+
+// function counter() {
+//     let start =  prompt("write a starter number...")
+//     let end =  prompt("write a ending number...")
+
+//     if ( isNaN(start) || isNaN(end) ) {
+//         return alert("sorry this is not a number.")
+//     } else {
+//         for (i = start; i <= end ; i++) {
+//             console.log(`${i}`);
+//         }
+//     }
+// }
+
+// counter()
+
+
+// QUESTION 09 
+
+
+// function calculateAreaOfTriangle(width,height) {
+//     area_of_a_rectangle = width * height
+//     return area_of_a_rectangle;
+// }
+
+// let width = prompt("writh a width")
+// let height = prompt("writh a height")
+
+// console.log(calculateAreaOfTriangle(width,height));
+
+
+// QUESTION 11
+
+// function capitalizeEachWord(input) {
+//     const words = input.split(' ');
+
+//     const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+
+//     const resultString = capitalizedWords.join(" ");
+
+//     return resultString;
+// }
+
+// const input = prompt("write a text");
+// const outputString = capitalizeEachWord(input);
+// console.log(outputString);
+
+
+// QUESTION 12
+
+// function calcCircumference(radius) {
+//     if (typeof radius !== 'number' || isNaN(radius) || radius <= 0) {
+//         return "Invalid radius. Please provide a positive numeric value.";
+//     }
+
+//     // Calculate the circumference using the formula C = 2 * π * r
+//     const circumference = 2 * Math.PI * radius;
+
+//     return `The circumference is ${circumference.toFixed(2)}`;
+// }
+
+// const radius = +prompt("write a radius.");
+// const result = calcCircumference(radius);
+// console.log(result);
+
+// function calcArea(radius) {
+//     if (typeof radius !== 'number' || isNaN(radius) || radius <= 0) {
+//         return "Invalid radius. Please provide a positive numeric value.";
+//     }
+
+//     // Calculate the area using the formula A = π * r^2
+//     const area = Math.PI * Math.pow(radius, 2);
+
+//     return `The area is ${area.toFixed(2)}`;
+// }
+
+// const radius = 5;
+// const result = calcArea(radius);
+// console.log(result);
+
+
+// XX ====================XX=================XX=====================XX=============
+//                               CHAPTER 33 to 42
+// XX ====================XX=================XX=====================XX============
+
+
+
+
+// XX ====================XX=================XX=====================XX=============
+//                               CHAPTER 43 to 48
+// XX ====================XX=================XX=====================XX============
+
+// =============  QUESTION 01 
+// let body = document.querySelector('body')
+// let a = document.createElement('a')
+// a.textContent = "click me"
+// console.log(a);
+// a.setAttribute('href' , '#')
+// a.setAttribute('onclick' , 'modal()')
+// body.appendChild(a)
+//  function modal() {
+//      alert("jani prank ho gaya hai camera me haat hi la do.")
+// }
+
+// ============= QUESTION 02
+// function buyAPhone() {
+//     alert("jani phone ap ka hoa. payment kese karo ge cash ya check?")
+// }
+
+// ============= QUESTION 03
+
+// let students = [
+//     {
+//         name:"ali",
+//         class:"10"
+//     },
+//     {
+//         name:"ahmad",
+//         class:"10"
+//     },
+//     {
+//         name:"kamil",
+//         class:"10"
+//     }
+// ]
+
+// let studentTable = document.querySelector('.studentTable')
+
+// function studentData() {
+//     students.forEach(function (student) {
+//         let className = student.name
+//         studentTable.innerHTML += `
+//                 <tr id="${className}">
+//                     <td>${student.name}</td>
+//                     <td>${student.class}</td>
+//                     <td><button onclick="removeHandler('${className}')">delete</button></td>
+//                 </tr>`
+//     });
+// }
+// studentData()
+
+// function removeHandler(className) {
+//     let tr = document.getElementById(className)
+//     tr.remove()
+// }
+
+
+// ============= QUESTION 04
+
+
+// let image = document.querySelector('.image');
+// let originalImageSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTioJVjCqldT41dm1pcgWCaHsNM21-C8QdVg&usqp=CAU";
+// let newImageSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaL9inan9jJNXCm8WTxtY2MjShIMXAc-8TNg&usqp=CAU";
+    
+// function imgChanger() {
+//     image.src = newImageSrc;
+// }
+// function imgChanger2() {
+//     image.src = originalImageSrc;
+// }
+
+
+// ============= QUESTION 05
+
+// let number = 0
+// let counter = document.querySelector("#counter")
+// let decrease = document.querySelector("#decrease")
+// let reset = document.querySelector("#reset")
+// let increase = document.querySelector("#increase")
+
+// function increaseNum() {
+//     ++number
+//     counter.innerHTML = number
+//     counter.style.color = "green"
+// }
+
+// function decreaseNum() {
+//     if (number >  0) {
+//         --number
+//         counter.innerHTML = number
+//         counter.style.color = "red"
+//     } 
+    
+// }
+
+// function resetNum() {
+//     number = 0
+//     counter.innerHTML = number
+//     counter.style.color = "black"
+// }
+
+
+// XX ====================XX=================XX=====================XX=============
+//                               CHAPTER 49 to 50
+// XX ====================XX=================XX=====================XX============
+
+
+// ============= QUESTION 01
+
+// let nameOfUser = document.querySelector('#name')
+
+// function submitHandler() {
+//     let nameInput = document.querySelector('#name');
+//     let addressInput = document.querySelector('#address');
+//     let phoneInput = document.querySelector('#phone');
+
+//     let nameDisplay = document.querySelector('#nameDisplay');
+//     let addressDisplay = document.querySelector('#addressDisplay');
+//     let phoneDisplay = document.querySelector('#phoneDisplay');
+
+//     nameDisplay.textContent = 'Name: ' + nameInput.value;
+//     addressDisplay.textContent = 'address: ' + addressInput.value;
+//     phoneDisplay.textContent = 'Phone: ' + phoneInput.value;
+// }
+
+
+// ============= QUESTION 02
+
+// let text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ratione nemo cum! Cum, consectetur maxime ut animi tempore, error quas, possimus quibusdam pariatur veritatis quos."
+// let para = document.querySelector('#para')
+// let myBtn = document.querySelector('#mybtn')
+// myBtn.textContent = "see more"
+
+// para.textContent = text.slice(0, 15) + "..."
+// myBtn.addEventListener("click" , () => {
+//     if (myBtn.textContent == "see more") {
+//         para.textContent = text
+//         myBtn.textContent = "see less"
+//     } else {
+//         para.textContent = text.slice(0, 15) + "..."
+//         myBtn.textContent = "see more"
+//     }
+// })
+
+
+// ============= QUESTION 03
+
+// let userName = document.querySelector('#name')
+// let grade = document.querySelector('#grade') 
+// let marks = document.querySelector('#marks')
+// let submit = document.querySelector('#submit')
+// let myUl = document.querySelector('.myUl')
+
+// submit.addEventListener("click", () => {
+//     if (userName.value === "" || grade.value    === "" ||
+//      isNaN(parseFloat(grade.value)) || marks.value    === "" || 
+//      isNaN(parseFloat(marks.value))) {
+//         alert("Please fill the form correctly!")
+//     } else {
+//         let idForLi = userName.value
+//         myUl.innerHTML += `
+//         <li id="${idForLi}">Name: ${String(userName.value)} <br>
+//         Grade: ${parseFloat(grade.value)} <br>
+//         Marks: ${parseFloat(marks.value)} <br>
+//         <button id="edit">edit</button> <button onclick="deleteHandler(${idForLi})" id="delete">delete</button></li>
+//         `
+//     }
+// })
+
+// let editBtn = document.querySelector('#edit')
+// let deleteBtn = document.querySelector('#delete')
+
+// function deleteHandler(idForLi) {
+//     let li = document.getElementById(idForLi)
+//     li.remove();
+// }
+
+
+
+
 // =============  QUESTION 04 
 
 // let greet = "hello world"
